@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AutoFix - Clientes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div>
+            <h1>AutoFix</h1>
+            <p>Cadastro de Clientes</p>
+        </div>
+
+        <a href="sistema.html">
+            Voltar
+        </a>
+
+    </header>
+
+
+    <main class="container">
+
+        <h2>Cadastro dos clientes da oficina</h2>
+
+        <div class="form-card">
+
+            <form id="clienteForm">
+
+                <label>Nome completo</label>
+
+                <input
+                    type="text"
+                    id="nomeCliente"
+                    placeholder="Digite o nome"
+                    required
+                >
+
+
+                <label>CPF</label>
+
+                <input
+                    type="text"
+                    id="cpfCliente"
+                    placeholder="000.000.000-00"
+                    required
+                >
+
+
+                <label>Telefone</label>
+
+                <input
+                    type="tel"
+                    id="telefoneCliente"
+                    placeholder="(00) 00000-0000"
+                >
+
+
+                <label>E-mail</label>
+
+                <input
+                    type="email"
+                    id="emailCliente"
+                    placeholder="cliente@email.com"
+                >
+
+
+                <label>Endereço</label>
+
+                <input
+                    type="text"
+                    id="enderecoCliente"
+                    placeholder="Digite o endereço"
+                >
+
+
+                <button type="submit">
+                    Cadastrar cliente
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="table-card">
+
+            <h3>Clientes cadastrados</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="listaClientes">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
